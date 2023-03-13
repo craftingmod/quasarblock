@@ -14,21 +14,21 @@
 
 ! # 차단된 회원 게시물입니다. 숨기기
 ! ## 리스트 컴포넌트의 차단 글 숨김
-quasarzone.com##dl[class^="list-type-a"] > dd > ul > li:has(a[href$="alert('차단된 회원 게시물입니다.');"])
+quasarzone.com#?#dl[class^="list-type-a"] > dd > ul > li:has(a[href$="alert('차단된 회원 게시물입니다.');"])
 ! ## 게시판 게시글의 차단 글 숨김
-quasarzone.com##div[class="dabate-type-list"] > table > tbody > tr:has(a[href$="alert('차단된 회원 게시물입니다.');"])
+quasarzone.com#?#div[class="dabate-type-list"] > table > tbody > tr:has(a[href$="alert('차단된 회원 게시물입니다.');"])
 
 ! # 차단 회원 댓글 숨기기
-quasarzone.com##.reply-list > ul > li:has(.van-text)
+quasarzone.com#?#.reply-list > ul > li:has(.van-text)
 
 ! # 유머게시판 글 숨기기
-quasarzone.com##.bot-util-area > dl > dd > ul > li:has(a[href^="/bbs/qb_humor/"])
+quasarzone.com#?#.bot-util-area > dl > dd > ul > li:has(a[href^="/bbs/qb_humor/"])
 
 ! ################
 ! # Mobile
 ! ################
 
 ! # 오늘의 베스트 차단 회원 숨김
-quasarzone.com##.best-wrap > .list-area > ul > li:has(a[href$="alert('차단된 회원 게시물입니다.');"])
+quasarzone.com#?#.best-wrap > .list-area > ul > li:has(a[href$="alert('차단된 회원 게시물입니다.');"])
 ! # 오늘의 베스트에서 유머게시판 글 숨기기
-quasarzone.com##.best-wrap > .list-area > ul > li:has(a[href^="/bbs/qb_humor/"])
+quasarzone.com#?#.best-wrap > .list-area > ul > li:has(a[href^="/bbs/qb_humor/"])
