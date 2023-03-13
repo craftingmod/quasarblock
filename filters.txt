@@ -2,8 +2,8 @@
 ! Homepage: https://github.com/craftingmod/quasarblock
 ! License: The Unlicense
 ! Title: QuasarBlock Cleaner
-! Expires: 30 days
-! Version: 202303142
+! Expires: 7 days
+! Version: 202303143
 
 ! Versiontype -> yyyymmddr
 ! 출처: https://drive.google.com/file/d/1k1Qqrx8ZenLoYmZX3aJOT1-YlAXNx9rd/view
@@ -21,6 +21,7 @@ quasarzone.com#?#div[class="dabate-type-list"] > table > tbody > tr:has(a[href$=
 
 ! # 차단 회원 댓글 숨기기
 quasarzone.com#?#.reply-list > ul > li:has(.van-text)
+quasarzone.com#?#.best-comment-wrap > li:has(.van-text)
 
 ! # 유머게시판 글 숨기기
 quasarzone.com#?#.bot-util-area > dl > dd > ul > li:has(a[href^="/bbs/qb_humor/"])
