@@ -1,0 +1,34 @@
+[Adblock Plus 2.0]
+! Homepage: https://github.com/craftingmod/quasarblock
+! License: The Unlicense
+! Title: QuasarBlock Cleaner
+! Expires: 30 days
+! Version: 20230314
+
+! 출처: https://drive.google.com/file/d/1k1Qqrx8ZenLoYmZX3aJOT1-YlAXNx9rd/view
+! 출처 게시글: https://quasarzone.com/bbs/qb_free/views/8112186
+
+! ################
+! # PC
+! ################
+
+! # 차단된 회원 게시물입니다. 숨기기
+! ## 리스트 컴포넌트의 차단 글 숨김
+quasarzone.com##dl[class^="list-type-a"] > dd > ul > li:has(a[href$="alert('차단된 회원 게시물입니다.');"])
+! ## 게시판 게시글의 차단 글 숨김
+quasarzone.com##div[class="dabate-type-list"] > table > tbody > tr:has(a[href$="alert('차단된 회원 게시물입니다.');"])
+
+! # 차단 회원 댓글 숨기기
+quasarzone.com##.reply-list > ul > li:has(.van-text)
+
+! # 유머게시판 글 숨기기
+quasarzone.com##.bot-util-area > dl > dd > ul > li:has(a[href^="/bbs/qb_humor/"])
+
+! ################
+! # Mobile
+! ################
+
+! # 오늘의 베스트 차단 회원 숨김
+quasarzone.com##.best-wrap > .list-area > ul > li:has(a[href$="alert('차단된 회원 게시물입니다.');"])
+! # 오늘의 베스트에서 유머게시판 글 숨기기
+quasarzone.com##.best-wrap > .list-area > ul > li:has(a[href^="/bbs/qb_humor/"])
