@@ -3,7 +3,7 @@
 ! License: The Unlicense
 ! Title: QuasarBlock Cleaner
 ! Expires: 7 days
-! Version: 202303143
+! Version: 202303144
 
 ! Versiontype -> yyyymmddr
 ! 출처: https://drive.google.com/file/d/1k1Qqrx8ZenLoYmZX3aJOT1-YlAXNx9rd/view
