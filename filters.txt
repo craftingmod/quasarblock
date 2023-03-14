@@ -35,5 +35,8 @@ quasarzone.com#?#.best-wrap > .list-area > ul > li:has(a[href$="alert('차단된
 ! # 오늘의 베스트에서 유머게시판 글 숨기기
 quasarzone.com#?#.best-wrap > .list-area > ul > li:has(a[href^="/bbs/qb_humor/"])
 
+! # 차단 회원 게시글 숨기기 (모바일)
+quasarzone.com#?#.content > .list-area > .list-style01 > ul > li:has(a[href$="alert('차단된 회원 게시물입니다.');"])
+
 ! # 차단 회원 댓글 숨기기 (모바일)
 quasarzone.com#?#.comment > div:has(.van-text)
