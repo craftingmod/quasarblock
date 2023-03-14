@@ -3,7 +3,7 @@
 ! License: The Unlicense
 ! Title: QuasarBlock Cleaner
 ! Expires: 7 days
-! Version: 202303144
+! Version: 202303145
 
 ! Versiontype -> yyyymmddr
 ! 출처: https://drive.google.com/file/d/1k1Qqrx8ZenLoYmZX3aJOT1-YlAXNx9rd/view
@@ -16,6 +16,7 @@
 ! # 차단된 회원 게시물입니다. 숨기기
 ! ## 리스트 컴포넌트의 차단 글 숨김
 quasarzone.com#?#dl[class^="list-type-a"] > dd > ul > li:has(a[href$="alert('차단된 회원 게시물입니다.');"])
+quasarzone.com#?#dl[class^="list-type-b"] > dd > ul > li:has(a[href$="alert('차단된 회원 게시물입니다.');"])
 ! ## 게시판 게시글의 차단 글 숨김
 quasarzone.com#?#div[class="dabate-type-list"] > table > tbody > tr:has(a[href$="alert('차단된 회원 게시물입니다.');"])
 
