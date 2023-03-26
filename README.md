@@ -11,7 +11,7 @@ Add URL to filter list or [click](https://subscribe.adblockplus.org/?location=ht
 
 
 # QuasarCleaner
-A userscript for reordering & cleaning main homepage.
+An userscript for reordering & cleaning main homepage.
 
 ## [Subscribe](https://cdn.jsdelivr.net/gh/craftingmod/quasarblock/qcleaner.user.js)
 
