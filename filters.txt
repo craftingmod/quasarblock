@@ -1,11 +1,11 @@
-[Adblock Plus 2.0]
+[Adguard]
 ! Homepage: https://github.com/craftingmod/quasarblock
 ! License: The Unlicense
 ! Title: QuasarBlock Cleaner
+! Description: Hide blocked user activity & hide humor article from today's best in quasarz0ne
 ! Expires: 7 days
-! Version: 202303145
+! Version: 20230326_1
 
-! Versiontype -> yyyymmddr
 ! 출처: https://drive.google.com/file/d/1k1Qqrx8ZenLoYmZX3aJOT1-YlAXNx9rd/view
 ! 출처 게시글: https://quasarzone.com/bbs/qb_free/views/8112186
 
@@ -15,17 +15,19 @@
 
 ! # 차단된 회원 게시물입니다. 숨기기
 ! ## 리스트 컴포넌트의 차단 글 숨김
-quasarzone.com#?#dl[class^="list-type-a"] > dd > ul > li:has(a[href$="alert('차단된 회원 게시물입니다.');"])
-quasarzone.com#?#dl[class^="list-type-b"] > dd > ul > li:has(a[href$="alert('차단된 회원 게시물입니다.');"])
+quasarzone.com#?#dl.list-type-a > dd > ul > li:has(a[href$="alert('차단된 회원 게시물입니다.');"])
+quasarzone.com#?#dl.list-type-b > dd > ul > li:has(a[href$="alert('차단된 회원 게시물입니다.');"])
 ! ## 게시판 게시글의 차단 글 숨김
-quasarzone.com#?#div[class="dabate-type-list"] > table > tbody > tr:has(a[href$="alert('차단된 회원 게시물입니다.');"])
+quasarzone.com#?#div.dabate-type-list > table > tbody > tr:has(a[href$="alert('차단된 회원 게시물입니다.');"])
+! ## 뉴스, 지름/타세요/장터 게시판에서 숨김
+quasarzone.com#?#div.market-info-type-list > table > tbody > tr:has(a[href$="alert('차단된 회원 게시물입니다.');"])
 
 ! # 차단 회원 댓글 숨기기
-quasarzone.com#?#.reply-list > ul > li:has(.van-text)
-quasarzone.com#?#.best-comment-wrap > li:has(.van-text)
+quasarzone.com#?#div.reply-list > ul > li:has(.van-text)
+quasarzone.com#?#div.best-comment-wrap > li:has(.van-text)
 
 ! # 유머게시판 글 숨기기
-quasarzone.com#?#.bot-util-area > dl > dd > ul > li:has(a[href^="/bbs/qb_humor/"])
+quasarzone.com#?#div.bot-util-area > dl > dd > ul > li:has(a[href^="/bbs/qb_humor/"])
 
 ! ################
 ! # Mobile
