@@ -4,11 +4,11 @@
 // @encoding    utf-8
 // @homepageURL https://github.com/craftingmod/quasarblock
 // @supportURL  https://github.com/craftingmod/quasarblock/issues
-// @updateURL   https://cdn.jsdelivr.net/gh/craftingmod/quasarblock/qcleaner.js
-// @downloadURL https://cdn.jsdelivr.net/gh/craftingmod/quasarblock/qcleaner.js
+// @updateURL   https://cdn.jsdelivr.net/gh/craftingmod/quasarblock/qcleaner.user.js
+// @downloadURL https://cdn.jsdelivr.net/gh/craftingmod/quasarblock/qcleaner.user.js
 // @license     The Unlicense
 
-// @version     2023.03.26.01
+// @version     2023.03.26.02
 
 // @match       *://quasarzone.com/
 
