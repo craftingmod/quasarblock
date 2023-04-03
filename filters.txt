@@ -4,7 +4,7 @@
 ! Title: QuasarBlock Cleaner
 ! Description: Hide blocked user activity & hide humor article from today's best in quasarz0ne
 ! Expires: 7 days
-! Version: 20230326_1
+! Version: 20230403_1
 
 ! 출처: https://drive.google.com/file/d/1k1Qqrx8ZenLoYmZX3aJOT1-YlAXNx9rd/view
 ! 출처 게시글: https://quasarzone.com/bbs/qb_free/views/8112186
@@ -37,6 +37,8 @@ quasarzone.com#?#div.bot-util-area > dl > dd > ul > li:has(a[href^="/bbs/qb_humo
 quasarzone.com#?#.best-wrap > .list-area > ul > li:has(a[href$="alert('차단된 회원 게시물입니다.');"])
 ! # 오늘의 베스트에서 유머게시판 글 숨기기
 quasarzone.com#?#.best-wrap > .list-area > ul > li:has(a[href^="/bbs/qb_humor/"])
+! # 뉴스에서 차단 회원 숨김
+quasarzone.com#?#.keyword-tab-wrap > .list-con-wrap > .list-con-area > ul > li:has(a[href$="alert('차단된 회원 게시물입니다.');"])
 
 ! # 차단 회원 게시글 숨기기 (모바일)
 quasarzone.com#?#.content > .list-area > .list-style01 > ul > li:has(a[href$="alert('차단된 회원 게시물입니다.');"])
